@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>定位样式position</title>
+		<!--再次注意：如果想走前端，学的这些前端内容是远远不够的 比如浮动就不全 漏讲了很多内容-->
+		<style type="text/css">
+			#div1{
+				background: #00FFFF;
+				border: solid 1px #000000 ;
+				width: 1000px;
+				height: 100px;
+				
+				/*定位*/
+				position: absolute;
+				top: 50px;
+				left: 100px;
+			}
+			#baidu{
+				/*变成小手   由光标cursor变成小手pointer*/
+				/* cursor: pointer; */
+				cursor: not-allowed;/*尽量不要使用hand,存在浏览器兼容的问题！*/
+				position: absolute;
+				top: 30px;
+				left: 400px;
+				text-decoration: underline;
+				color: #FF0000;
+			}
+			/*注意：一般绝对定位和相对定位是连用的*/
+		</style>
+	</head>
+	<body>
+		<div id="div1">
+			<span id="baidu">
+				百度
+			</span>
+		</div>
+	</body>
+</html>

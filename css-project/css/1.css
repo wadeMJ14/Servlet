@@ -1,0 +1,23 @@
+#div1{
+	background-color: #FF0000;
+	width: 100px;
+	height: 100px;
+}
+/*标签选择器*/
+input{
+	/* border-style: solid;
+	border-color: red;
+	border-width: 1px; */
+	border: solid 10px orange;
+}
+/*类选择器也可以使用*/
+.myinput{
+	border: solid 10px greenyellow;
+}
+/*#id选择器*/
+#username{
+	border: double 5px black;
+}
+/*由此可以看出三者的优先级的问题
+范围越小 优先级越高 ID选择器最高 标签选择器最低 只是在此三者之间
+*/

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>内边距和外边距</title>
+		
+		<style type="text/css">
+			/*跟左上角的x轴y轴坐标有关系的   内补丁 外部丁 也就是内边距和外边距被说成了内补丁和外补丁
+			*/
+			#div1{
+				width: 300px;
+				height: 300px;
+				background-color: #00FFFF;
+				border: solid 10px red;
+				/* align-content: center; */
+				/*内补丁   也就是以本身为参考 只不过是不同的参考系*/
+				padding-left: 50px;
+			}
+			#div2{
+				width: 100px;
+				height: 200px;
+				background-color: #808080;
+				border: double 5px #000000;
+				/*在div2这个节点顶部top打个补丁，这个补丁高top 10px*/
+				/*外补丁   也就是以本身为参考*/
+				margin-top: 10px;
+				margin-left: 50px;
+			}
+		</style>
+	</head>
+	<body>
+		<!--盒子套着盒子-->
+		<!--如果盒子套着盒子，需要定位的话，可以使用外补丁和内补丁-->
+		<div id="div1">
+			<div id="div2">
+				
+			</div>
+			
+		</div>
+	</body>
+</html>
